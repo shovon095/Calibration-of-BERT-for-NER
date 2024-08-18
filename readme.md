@@ -17,7 +17,7 @@ Seqeval
 
 Installation
 Clone the repository:
-git clone https://github.com/shovon095/Calibration-of-BERT.git
+git clone https://github.com/shovon095/Calibration-of-BERT-for-NER.git
 
 
 Usage
