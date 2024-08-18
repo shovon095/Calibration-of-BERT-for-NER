@@ -3,6 +3,7 @@ This repository provides a script for training, evaluating, and predicting a Nam
 We used EHR dataset from n2c2 competition of 2022. Please refer to : https://n2c2.dbmi.hms.harvard.edu/
 
 
+
 Features:
 Train: Fine-tune a pre-trained transformer model on a NER dataset.
 Evaluate: Evaluate the model using common metrics such as precision, recall, F1-score, and calibration errors (ECE and MCE).
@@ -20,7 +21,6 @@ Installation
 Clone the repository:
 git clone https://github.com/shovon095/Calibration-of-BERT.git
 
-cd ner-transformers
 
 Usage
 1. Prepare Your Data
