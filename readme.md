@@ -1,6 +1,7 @@
-Named Entity Recognition (NER) with Transformers
 This repository provides a script for training, evaluating, and predicting a Named Entity Recognition (NER) model using the Hugging Face Transformers library. The script is highly customizable, allowing you to fine-tune a pre-trained transformer model on your dataset, evaluate its performance, and predict named entities in unseen text.
 We used EHR dataset from n2c2 competition of 2022. Please refer to : https://n2c2.dbmi.hms.harvard.edu/
+Please use Data Pre-processing.ipynb to preprocess the data. We used IOB tagging.
+Please use Data Post-processing.ipynb to postprocess the data for n2c2 format.
 
 
 
