@@ -1,6 +1,7 @@
 Named Entity Recognition (NER) with Transformers
 This repository provides a script for training, evaluating, and predicting a Named Entity Recognition (NER) model using the Hugging Face Transformers library. The script is highly customizable, allowing you to fine-tune a pre-trained transformer model on your dataset, evaluate its performance, and predict named entities in unseen text.
-We used EHR dataset from n2c2 competition of 2022.
+We used EHR dataset from n2c2 competition of 2022. Please refer to : https://n2c2.dbmi.hms.harvard.edu/
+
 
 Features:
 Train: Fine-tune a pre-trained transformer model on a NER dataset.
@@ -20,9 +21,6 @@ Clone the repository:
 git clone https://github.com/shovon095/Calibration-of-BERT.git
 
 cd ner-transformers
-
-Install the dependencies:
-pip install -r requirements.txt
 
 Usage
 1. Prepare Your Data
