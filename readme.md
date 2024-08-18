@@ -3,12 +3,14 @@ We used EHR dataset from n2c2 competition of 2022. Please refer to : https://n2c
 
 
 Features:
+
 Train: Fine-tune a pre-trained transformer model on a NER dataset.
 Evaluate: Evaluate the model using common metrics such as precision, recall, F1-score, and calibration errors (ECE and MCE).
 Predict: Predict named entities in new text data.
 Calibration Error Measurement: The script calculates Expected Calibration Error (ECE) and Maximum Calibration Error (MCE) to assess the model's confidence in its predictions.
 
 Requirements:
+
 Python 3.6+
 Hugging Face Transformers
 PyTorch
@@ -20,7 +22,8 @@ Clone the repository:
 git clone https://github.com/shovon095/Calibration-of-BERT-for-NER.git
 
 
-Usage
+Usage:
+
 1. Prepare Your Data
 Ensure your data is in a CoNLL-2003 format with each word tagged with its corresponding entity label. The data should be split into train, validation, and test sets.
 
@@ -76,7 +79,8 @@ You can adjust various hyperparameters such as learning rate, batch size, and nu
 3. Custom Tokenization
 You can use a different tokenizer by specifying --tokenizer_name. If you want to enable fast tokenization, add the --use_fast flag.
 
-Results
+Results:
+
 The script will generate the following files in the output directory:
 
 pytorch_model.bin: The fine-tuned model.
@@ -86,14 +90,17 @@ eval_results.txt: Evaluation results including metrics and calibration errors.
 test_predictions.txt: Predictions on the test set.
 
 Troubleshooting:
+
 CUDA Errors: Ensure your system has a compatible GPU and that the CUDA toolkit is properly installed.
 Memory Issues: Reduce the batch size if you encounter out-of-memory errors during training or evaluation.
 Data Format Issues: Ensure your input data is correctly formatted according to the CoNLL-2003 specification.
 
-Contributing
+Contributing:
+
 Contributions are welcome! Please submit a pull request or open an issue for any improvements or bug fixes.
 
 
-Acknowledgements
+Acknowledgements:
+
 This project leverages the Hugging Face Transformers library and the PyTorch framework for deep learning.
 
