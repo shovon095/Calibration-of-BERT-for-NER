@@ -18,20 +18,21 @@ Seqeval
 
 
 Installation
+
 Clone the repository:
 git clone https://github.com/shovon095/Calibration-of-BERT-for-NER.git
 
 
 Usage:
 
-1. Prepare Your Data
+1. Prepare Your Data:
 Ensure your data is in a CoNLL-2003 format with each word tagged with its corresponding entity label. The data should be split into train, validation, and test sets.
 
-Please use Data Pre-processing.ipynb to preprocess the data. We used IOB tagging.
-Please use Data Post-processing.ipynb to postprocess the data for n2c2 format.
-Use preprocess.sh to generate the labels for the model training.
+Please use Data Pre-processing.ipynb to preprocess the data. We used IOB tagging. We separated the sentences in EHR using a space.
+Please use Data Post-processing.ipynb to postprocess the data for n2c2 format. The script should iterate through the test data and return only .ann files from the predictions of the models.
+Use preprocess.sh on the IOB tagged data to generate the labels for the model training. 
 
-3. Training the Model
+3. Training the Model:
 To train the model, use the following command:
 
 
@@ -51,10 +52,10 @@ python ner_task.py \
   --save_steps 500 \
   --seed 42
 
-3. Evaluating the Model
+3. Evaluating the Model:
 After training, you can evaluate the model on the validation set by adding the --do_eval flag to the above command. The script will calculate and print evaluation metrics including precision, recall, F1-score, and calibration errors.
 
-4. Predicting Named Entities
+4. Predicting Named Entities:
 To predict named entities in new text data, use the following command:
 
 
@@ -66,17 +67,17 @@ python ner_task.py \
   --do_predict
 The predictions will be saved in the output directory.
 
-5. Calibration Error Metrics
+5. Calibration Error Metrics:
 The script also calculates and prints calibration error metrics (ECE and MCE) during evaluation and prediction. These metrics help you assess the reliability of the model's confidence in its predictions.
 
-Customization
+Customization:
 1. Changing the Pre-trained Model
 You can change the pre-trained model by modifying the --model_name_or_path argument. The script supports any model available on the Hugging Face Model Hub.
 
-2. Adjusting Hyperparameters
+2. Adjusting Hyperparameters:
 You can adjust various hyperparameters such as learning rate, batch size, and number of training epochs through command-line arguments.
 
-3. Custom Tokenization
+3. Custom Tokenization:
 You can use a different tokenizer by specifying --tokenizer_name. If you want to enable fast tokenization, add the --use_fast flag.
 
 Results:
