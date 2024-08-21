@@ -30,7 +30,7 @@ Ensure your data is in a CoNLL-2003 format with each word tagged with its corres
 - Use `preprocess.sh` on the IOB tagged data to generate the labels for the model training.
 
 ### 2. Training the Model
-python ner_task.py
+python calibration_bert.py
 --model_name_or_path bert-base-cased
 --data_dir ./data
 --labels ./data/labels.txt
@@ -52,7 +52,7 @@ After training, you can evaluate the model on the validation set by adding the `
 
 ### 4. Predicting Named Entities
 
-python ner_task.py
+python calibration_bert
 --model_name_or_path ./output
 --data_dir ./data
 --labels ./data/labels.txt
