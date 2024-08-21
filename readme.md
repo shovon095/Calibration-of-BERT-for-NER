@@ -5,7 +5,7 @@ This repository provides a script for training, evaluating, and predicting a Nam
 ## Features
 
 - **Train**: Fine-tune a pre-trained transformer model on a NER dataset.
-- **Evaluate**: Evaluate the model using common metrics such as precision, recall, F1-score, and calibration errors (ECE and MCE).
+- **Evaluate**: Evaluate the model using common metrics such as precision, recall, F1-score, and calibration errors (ECE and MCE). After the postprocessing of the data, run the eval_Script.py to have strict, lenient for NER. Micro and Macro metrics for events classification.
 - **Predict**: Predict named entities in new text data.
 - **Calibration Error Measurement**: The script calculates Expected Calibration Error (ECE) and Maximum Calibration Error (MCE) to assess the model's confidence in its predictions.
 
