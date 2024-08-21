@@ -1,4 +1,4 @@
-# Named Entity Recognition (NER) Model Training, Evaluation, and Prediction
+# Named Entity Recognition (NER) and Medication events classification: Model Training, Evaluation, and Prediction
 
 This repository provides a script for training, evaluating, and predicting a Named Entity Recognition (NER) model using the Hugging Face Transformers library. The script is highly customizable, allowing you to fine-tune a pre-trained transformer model on your dataset, evaluate its performance, and predict named entities in unseen text. We used the EHR dataset from the n2c2 competition of 2022. Please refer to: [n2c2 Competition](https://n2c2.dbmi.hms.harvard.edu/).
 
